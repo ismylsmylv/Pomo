@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './controls.component.html',
-  styleUrl: './controls.component.scss'
+  styleUrl: './controls.component.scss',
 })
 export class ControlsComponent {
-
+  log(event: string) {
+    console.log(event);
+  }
 }
