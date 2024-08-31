@@ -1,0 +1,15 @@
+$bg: #FFF2F2;
+$main: #471515;
+$accent: #FFD9D9;
+$btn: #FF7C7C;
+
+section {
+    button {
+        background-color: $accent;
+        border: 1px solid $main;
+        padding: 0.1rem 1rem;
+        text-transform: capitalize;
+        color: $main;
+        font-weight: 500;
+    }
+}
