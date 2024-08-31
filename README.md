@@ -1,5 +1,7 @@
 # Pomo
 
+Design https://www.figma.com/design/07vqsVPM8yvtH2ujU2z8q3/%E2%8F%B0-Pomo---Pomodoro-Timer-App-Prototype-(v-0.1.0)-(Community)?node-id=11-2343&node-type=FRAME&t=eOaleduvdUv5z5mZ-0
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
 
 ## Development server
