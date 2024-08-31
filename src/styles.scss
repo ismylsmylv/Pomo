@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+$bg: #FFF2F2;
+$main: #471515;
+$accent: #FFD9D9;
+$btn: #FF7C7C;
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: $bg;
+}
