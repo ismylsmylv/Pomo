@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-controls',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './controls.component.html',
   styleUrl: './controls.component.scss',
 })
