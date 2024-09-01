@@ -1,0 +1,69 @@
+$btn: #FF7C7C;
+$bg: #FFF2F2;
+
+ul {
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    max-width: 280px;
+    overflow: hidden;
+  }
+
+}
+
+.task-list-container {
+  width: 300px;
+  margin: auto;
+  text-align: left;
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: $btn;
+    border-radius: 50%;
+
+    svg {
+      background-color: transparent;
+      height: 2rem;
+      width: 2rem;
+      fill: $bg;
+    }
+  }
+}
+
+input[type='text'] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
