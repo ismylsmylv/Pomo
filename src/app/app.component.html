@@ -11,7 +11,7 @@
 <main class="main">
   <!-- <app-switch (sectionChange)="setSection($event)" [section]="section"></app-switch> -->
 
-  <div class="flex gap-10 justify-between items-start">
+  <div class="flex flex-wrap gap-10 justify-center items-start">
     <div>
       <app-time [section]="section" [control]="currentControl"></app-time>
       <app-controls (controlChange)="onControlChange($event)"></app-controls>

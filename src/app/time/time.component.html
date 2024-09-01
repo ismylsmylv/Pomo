@@ -1,4 +1,4 @@
 <section>
   <div class="digit minutes">{{ getTimeParts().minutes }}</div>
-  <div class="digit seconds">{{ getTimeParts().seconds}}</div>
+  <div class="digit seconds">{{ getTimeParts().seconds===0?'00':getTimeParts().seconds}}</div>
 </section>

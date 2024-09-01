@@ -7,6 +7,7 @@ main {
   justify-content: center;
   flex-direction: column;
   margin-top: 10%;
+  padding: 1rem;
 }
 
 .line {
@@ -14,4 +15,10 @@ main {
   margin: 0 2rem;
   width: 1px;
   background-color: $main;
+}
+
+@media (max-width:1000px) {
+  .line {
+    display: none;
+  }
 }
