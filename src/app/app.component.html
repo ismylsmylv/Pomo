@@ -9,17 +9,17 @@
 
 
 <main class="main">
-  <app-switch (sectionChange)="setSection($event)" [section]="section"></app-switch>
-  <ng-container *ngIf="section=='focus'; else elseTemplate">
+  <!-- <app-switch (sectionChange)="setSection($event)" [section]="section"></app-switch> -->
 
-
-    <app-time [section]="section" [control]="currentControl"></app-time>
-    <app-controls (controlChange)="onControlChange($event)"></app-controls>
-
-  </ng-container>
-  <ng-template #elseTemplate>
+  <div class="flex gap-10 justify-between items-start">
+    <div>
+      <app-time [section]="section" [control]="currentControl"></app-time>
+      <app-controls (controlChange)="onControlChange($event)"></app-controls>
+    </div>
+    <div class="line"></div>
     <app-tasks></app-tasks>
-  </ng-template>
+  </div>
+
 </main>
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
