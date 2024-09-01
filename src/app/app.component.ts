@@ -26,4 +26,9 @@ export class AppComponent {
   setSection(type: string): void {
     this.section = type;
   }
+  currentControl: boolean = false;
+
+  onControlChange(control: boolean) {
+    this.currentControl = control;
+  }
 }

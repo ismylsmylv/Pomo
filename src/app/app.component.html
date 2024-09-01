@@ -11,8 +11,11 @@
 <main class="main">
   <app-switch (sectionChange)="setSection($event)" [section]="section"></app-switch>
   <ng-container *ngIf="section=='focus'; else elseTemplate">
-    <app-time [section]="section"></app-time>
-    <app-controls></app-controls>
+
+
+    <app-time [section]="section" [control]="currentControl"></app-time>
+    <app-controls (controlChange)="onControlChange($event)"></app-controls>
+
   </ng-container>
   <ng-template #elseTemplate>
     <app-tasks></app-tasks>

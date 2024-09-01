@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-controls',
@@ -8,7 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './controls.component.scss',
 })
 export class ControlsComponent {
-  log(event: string) {
+  @Output() controlChange = new EventEmitter<boolean>();
+  control = false;
+  log(event: boolean) {
+    this.control = event;
     console.log(event);
+    this.controlChange.emit(this.control);
   }
 }
